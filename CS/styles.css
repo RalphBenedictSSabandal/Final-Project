@@ -42,11 +42,21 @@ body{
   width: 200px;
 }
 .setting{
+  background: url('Images/menu.png') no-repeat -592px -109px;
   position: absolute;
-  margin-top: -65px;
+  top: -65px;
   left: 1200px;
-  height: 40px;
   width: 40px;
+	height: 40px;
+}
+
+.setting:hover{
+  background: url('Images/menu.png') no-repeat -60px -109px;
+  position: absolute;
+  top: -65px;
+  left: 1200px;
+  width: 40px;
+	height: 40px;
 }
 .waste{
   height: 260px;
@@ -89,7 +99,10 @@ body{
   height: 200px;
   border-radius: 8px;
 }
-
+.imgcol:hover{
+  transform: rotate(-10deg);
+  transition-duration: 1s;
+}
 .col{
   padding: 10px;
 }
@@ -108,6 +121,11 @@ body{
   height: 300px;
   width: 500px;
   border-radius: 8px;
+}
+
+.real:hover{
+  transform: rotate(-10deg);
+  transition-duration: 1s;
 }
 
 .emoj{
@@ -162,4 +180,5 @@ body{
   color:#122023;
   background-color:greenyellow;
 }
+
 
