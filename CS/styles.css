@@ -42,21 +42,21 @@ body{
   width: 200px;
 }
 .setting{
-  background: url('Images/menu.png') no-repeat -592px -109px;
+  background: url('Images/menu.png') no-repeat -4px -10px;
   position: absolute;
   top: -65px;
   left: 1200px;
-  width: 40px;
-	height: 40px;
+  width: 50px;
+  height: 50px;
 }
 
 .setting:hover{
-  background: url('Images/menu.png') no-repeat -60px -109px;
+  background: url('Images/menu.png') no-repeat -64px -10px;
   position: absolute;
   top: -65px;
   left: 1200px;
-  width: 40px;
-	height: 40px;
+  width: 50px;
+  height: 50px;
 }
 .waste{
   height: 260px;
