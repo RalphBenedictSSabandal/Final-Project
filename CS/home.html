@@ -5,6 +5,7 @@
     <title>Hello, World!</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <script src="javascript.js"></script>
   <body>
     <nav>
       <div class="nav">
@@ -49,7 +50,7 @@
     </article>
     <aside>
       <img class="real" src="Images/real.jpg">
-      <p style="position: relative; top:100px; left:60px; float:left;">Absolutely REAL picture of RecyCom employees collecting the weekly trash in Malaysia.</p>
+      <p style="position: relative; top:100px; float:left;">Absolutely REAL picture of RecyCom employees collecting the weekly trash in Malaysia.</p>
       <h3 class="review">"GREAT SERVICE. KIND SERVICE. 5/5 " <img class="emoj" src="Images/star.png"></h3>
       <h3 class="review" style="float: right;">"WOULD SUBSCRIBE FOR 1000 YEARS IF I COULD 6/5"<img class="emoj" src="Images/star.png"></h3>
       <h3 class="review">"It's okay 3/5"<img class="emoj" src="Images/hand.png"></h3>
@@ -85,6 +86,61 @@
     </section>
     <div style="position: relative; left: -120px; float: right" class="turtle"></div>
     <footer>
+      <p>Try taking a quiz to test your knowledge on waste management!</p>
+      <p>Type the letter of your answer in capital letters.</p>
+      <button id="start" onclick="start()">CLICK TO TRY</button>
+      <div id="item1" style="display: none">
+        <p>1. What are the three R's of waste management?</p>
+        <p>a. Reduce, Reuse, Recycle</p>
+        <p>b. Recluse, Repose, Redundant</p>
+        <p>c. Rat, Raccoon, Raven</p>
+        <p>d. Remake, Rejoice, Recreate</p>
+        <input type="text" id="ans1"> 
+        <button type="button" id="but1" onclick="item1()">Continue</button>
+      </div>
+      <div id="item2" style="display: none">
+        <p>2. The following are examples of recycling EXCEPT one.</p>
+        <p>a. Creating shoes from used plastic bottles.</p>
+        <p>b. Making furniture from used plastic straws and lids.</p>
+        <p>c. Separating plastics from biodegradables.</p>
+        <p>d. Shredding sheets paper to create new ones.</p>
+        <input type="text" id="ans2"> 
+        <button type="button" id="but2" onclick="item2()">Continue</button>
+        <button type="button" id="back1" onclick="back1(1)">Return</button>
+      </div>
+      <div id="item3" style="display: none">
+        <p>3. The following are materials with their respective waste segregation EXCEPT one.</p>
+        <p>a. Banana Peels:Biodegradable</p>
+        <p>b. Plastic Bottles:Recyclable</p>
+        <p>c. Aluminum Can:Recyclable </p>
+        <p>d. Rubber Shoes:Biodegradable</p>
+        <input type="text" id="ans3"> 
+        <button type="button" id="but3" onclick="item3()">Continue</button>
+        <button type="button" id="back2" onclick="back2(2)">Return</button>
+      </div>
+      <div id="item4" style="display: none">
+        <p>4. Which of the following materials should be recycled?</p>
+        <p>a. Cardboard Boxes</p>
+        <p>b. Aluminum Cans</p>
+        <p>c. Plastic Bottles</p>
+        <p>d. All of the above</p>
+        <input type="text" id="ans4"> 
+        <button type="button" id="but4" onclick="item4()">Continue</button>
+        <button type="button" id="back3" onclick="back3(3)">Return</button>
+      </div>
+      <div id="item5" style="display: none">
+        <p>5. Which of the following activities is eco-friendly?</p>
+        <p>a. Ordering fast food take-out.</p>
+        <p>b. Using a reusable water bottle.</p>
+        <p>c. Buying one-use plastics like plastic forks.</p>
+        <p>d. Buying clothes with no size allowance.</p>
+        <input type="text" id="ans5"> 
+        <button type="button" id="but5" onclick="item5()">Submit</button>
+        <button type="button" id="back4" onclick="back4(4)">Return</button>
+      </div>
+      <p id="result"></p>
+      <button type="button" id="restart" style="display: none" onclick="location.reload()">Try Again?</button>
+
       <p class="intro">We have recycled 1.54 billion tons of trash so far. Help us increase this number by 
         subscribing to our service.
       </p>
