@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello, World!</title>
+        <link rel="stylesheet" href="styles2.css" />
+    </head>
+    <script src="javascript2.js"></script>
+    <body>
+        <nav>
+          <div class="nav">
+            <a class="act">RecyCom</a>
+            <a class="home" href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="sub.html">Subscription</a>
+            <a href="signup.html">Sign-Up</a>
+            <a href="#Help">Help</a>
+          </div>
+          <img class="log" src="Images/logo.png">
+          <div class="dropdown">
+            <div class="setting"></div>
+            <div class="dropdown-content">
+                <a href="profile.html">Profile</a>
+                <a href="#">Location</a>
+                <a href="#">Costumer Service</a>
+            </div>
+          </div>
+        </nav> 
+        <article>
+            <h1 style="text-align: center;">RECYCOM</h1>
+            <p class="intro">We're a non-profit organization seeking to promote recycling and reduce global waste. We provide a 
+              trash collecting service that recycles your trash with no extra fees at the same cost as average waste
+              collecting services. The major difference? You receive refunds when you contribute enough to the service.
+            </p>
+            <p class="para">According to <a class="link" href="https://www.unep.org/resources/global-waste-management-outlook-2024">UNEP's Global Waste Management Outlook 2024</a> 
+              "Municipal solid waste generation is predicted to grow from 2.1 billion tonnes in 2023 to 3.8 billion tonnes by 2050.
+              In 2020, the global direct cost of waste management was an estimated USD 252 billion."
+            </p>
+            <p class="para">We aim to work towards a world with less waste production. Waste can be reduced by simply recycling or reusing products. Our service works
+              towards recycling waste from all around the world. So far we've extended our reach through all of Asia, Europe, and some of Africa. With
+              your help we could extend our reach throughout the entire world, promoting recycling and lessening waste production along the way. 
+            </p>
+            <p class="para">This is why you can help not only the world but also yourself and your family by <a class="link" href="sub.html">subscribing</a> to our service
+                or by signing up as a volunteer.
+                You can even save money because of our refund feature. Simply contribute enough trash and our service is completely free.
+                We hope you contribute to this cause that millions around the world are working towards, and you can join too. 
+            </p>
+          </article>
+          <br>
+          <div>
+            <p style="text-align: center;">Sign-Up Form for Volunteers</p>
+                <form style="text-align: center;">
+                    <br>
+                    <label for="firstName">*First Name</label>
+                    <input type="text" id="firstName" name="firstName" required><p id="fnrequired"></p><br>
+                    <label for="lastName">*Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required><p id="lnrequired"></p><br>
+                    *Gender
+                    <div>
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="sex" required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="sex" required><br>
+                        <label for="null">Prefer Not To Say</label>
+                        <input type="radio" id="null" name="sex" required><br><br>
+                        <p id="gnrequired"></p>
+                    </div>
+                    <label for="emailaddress">*Email Address</label>
+                    <input type="text" id="emailaddress" name="emailaddress" required><p id="earequired"></p><br>
+                    <label for="password">*Password</label>
+                    <input type="password" id="password" name="password" required><p id="prequired"></p><br>
+                    <label for="contactnumber">Contact Number</label>
+                    <input type="text" id="contactnumber" name="contactnumber"><br><br>
+                    <label for="reason">*Why you're supporting our campaign</label></p><br>
+                    <textarea id="reason" name="reason" rows="4" cols="50"></textarea><p id="rrequired"></p><br>
+                    <input type="button" value="Sign-Up" onclick="profileset()">
+                    <input type="reset"><br>
+                </form>
+            </div>
+    </body> 
+</html>
